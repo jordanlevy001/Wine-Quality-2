@@ -70,6 +70,8 @@ Taking a closer look at: chlorides, alcohol, pH
 #### Principal Component Analysis (PCA)
 PCA analysis shows 8 features together account for 99% of the variance
 
+<img width="615" alt="PCA Plot" src="https://user-images.githubusercontent.com/88804543/157563911-baa1fbab-5772-4904-98e3-529f0641cf18.png">
+
 <img width="537" alt="PCA Explained Variance Ratio" src="https://user-images.githubusercontent.com/88804543/157562537-6245f638-9128-423c-af50-ea55a72e5967.png">
 
 Here are the features sorted in order of greatest importance/weight:
@@ -82,6 +84,15 @@ Here are the features sorted in order of greatest importance/weight:
 ### Logistic Regression
 Supervised learning can be divided into regression and classification. Regression is used to predict continuous variables. Whereas classification is used to predict discrete outcomes. For this wine analysis, the target variable (what we're trying to predict), is a quality score -- which is a continuous variable. The wine quality score is a numerical value within a given range, making it a continuous variable. In both classification and regression issues, the data is divided into features and targets. Features are the variable used to inform the prediction. The target/output is the predicted outcome.
 
+<img width="507" alt="Logistic Regression" src="https://user-images.githubusercontent.com/88804543/157564291-6d43ec03-d717-49a4-a8bb-8bc3f0959c51.png">
+
+
+## Support-Vector Machines (SVM)
+
+
+
+
+<img width="523" alt="SVM" src="https://user-images.githubusercontent.com/88804543/157564307-94aa6087-53e0-4979-9ff5-07cc13ff7f2a.png">
 
 
 ### Random Forest Classifier
@@ -97,13 +108,19 @@ In addition, each model handles input data differently. Random forest models are
 
 As a result, the deep learning model might be able to identify variability in a dataset that a random forest model could miss. However, a random forest model with a sufficient number of estimators and tree depth should be able to perform at a similar capacity to most deep learning models.
 
+<img width="606" alt="RFC Acc Score" src="https://user-images.githubusercontent.com/88804543/157564326-5e9fe299-60b6-48cb-8274-8116f44f2646.png">
+
+
+
 ## Results
 
-The principal component analysis (PCA) confirmed the four most important metrics for wine likeability are: volatile acidity, citric acid, sulphates, alcohol quantities. The most important of those four is alcohol quantity.
+The principal component analysis (PCA) confirmed the eight most important metrics for wine likeability are: volatile acidity, citric acid, sulphates, alcohol quantities. The most important of those eight is alcohol quantity.
 
-### Random Forest Classifer
+The Logistic Regression Accuracy Score was 98.54%
 
-The Random Forest Classifier Accuracy Score was 98.5%
+The SVM Accuracy Score was 98.54%
+
+The Random Forest Classifier Accuracy Score was 98.54%
 
 
 
