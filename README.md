@@ -1,8 +1,8 @@
 # Wine-Quality-2
-A second machine learning wine quality analysis performed as a follow up to the ML-Wine-Quality repository.
+A second machine learning wine quality analysis performed as a follow up to the ML-Wine-Quality repository. This is a fresh attempt to improve optimization of the machine learning techniques. A dataset with identical features but slightly different values was used. 
 
 ## Project Overview
-The goal of this project was to use machine learning techniques: logistic regression, SVM, Random Forest Classifier to predict the overall quality score (likeability) of various wines. The data for this project was obtained with free use from [Kaggle](https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009) through UCI Machine Learning.
+The goal of this project was to use machine learning techniques: logistic regression, SVM, Random Forest Classifier to predict the quality score (likeability) of various wines. Binning was used to decrease the number of classes of the output variable. A column was added to bin the quality scores into 1 of 3 bins: 1. Bad (Quality Score: 1-3), 2. Average (Quality Score: 4-7), 3. Excellent (Quality Score: 8-10). The data for this project was obtained with free use from [Kaggle](https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009) through UCI Machine Learning.
 
 ## Technology/Software Utilized
 - Google Colab
@@ -18,7 +18,7 @@ The goal of this project was to use machine learning techniques: logistic regres
 ## Data
 Free Data Source: [Kaggle](https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009)
 
-Columns:
+Columns/Features:
 1. Fixed Acidity
 2. Volatile Acidity
 3. Citric Acid
@@ -31,7 +31,7 @@ Columns:
 10. Sulphates
 11. Alcohol
 12. **Quality --> OUTPUT: this is the overall quality score**
-13. Reviews -- this column was added to categorize the quality score into 1 of 3 categories: 1. Bad 2. Average 3. Excellent
+13. Reviews -- this column was added to bin the quality score into 1 of 3 categories: 1. Bad (Quality Score: 1-3) 2. Average (Quality Score: 4-7) 3. Excellent (Quality Score: 8-10)
 
 <img width="1117" alt="Wine Stats" src="https://user-images.githubusercontent.com/88804543/154178721-63f21163-eb1d-46bb-aaa1-35f497011f22.png">
 
@@ -68,13 +68,13 @@ Taking a closer look at: chlorides, alcohol, pH
 
 
 #### Principal Component Analysis (PCA)
-PCA confirms the Volatile Acidity, Citric Acid, Sulphates, Alcohol metrics together account for 99% of the variance
+PCA analysis shows 8 features together account for 99% of the variance
 
-<img width="448" alt="Screen Shot 2022-02-15 at 11 24 54 AM" src="https://user-images.githubusercontent.com/88804543/154134246-ac22e71b-dca0-4788-b7db-29d03f25ad93.png">
+<img width="537" alt="PCA Explained Variance Ratio" src="https://user-images.githubusercontent.com/88804543/157562537-6245f638-9128-423c-af50-ea55a72e5967.png">
 
-Here is the updated DataFrame, with the highest weighted metrics: Volatile Acidity, Citric Acid, Sulphates, Alcohol and quality (which is needed as the output).
+Here are the features sorted in order of greatest importance/weight:
 
-<img width="446" alt="Reduced DF" src="https://user-images.githubusercontent.com/88804543/154179638-456ccb74-26dc-4c93-a857-7784cb9d89e4.png">
+<img width="549" alt="Feature Importance Ranking" src="https://user-images.githubusercontent.com/88804543/157562547-7edfa1a7-efdc-4600-917e-4a49fb2d427f.png">
 
 
 ## Analysis: Logistic Regression, Support-Vector Machines (SVM), Random Forest Classifier
