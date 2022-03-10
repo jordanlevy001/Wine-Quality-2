@@ -114,6 +114,9 @@ Random forest classifiers are a type of ensemble learning model that combines mu
 
 The n_estimators will allow us to set the number of trees that will be created by the algorithm. Generally, the higher number makes the predictions stronger and more stable, but can slow down the output because of the higher training time allocated. The best practice is to use between 64 and 128 random forests. This analysis used 128.
 
+<img width="542" alt="RFC" src="https://user-images.githubusercontent.com/88804543/157567538-c4fd3d90-cc00-4d84-9c0f-5775ee3436d2.png">
+
+
 
 ### Random Forest Classifer vs Neural Networks
 Random forest models will only handle tabular data, so data such as images or natural language data cannot be used in a random forest without heavy modifications to the data. Neural networks can handle all sorts of data types and structures in raw format or with general transformations (such as converting categorical data).
