@@ -101,7 +101,9 @@ In both classification and regression issues, the data is divided into features 
 
 ## Support-Vector Machines (SVM)
 
+Natively, SVM is a binary classification model, and does not support multi-class classification. However, using a One-vs-Rest or One-vs-One strategy, performing multi-class classification is possible. SVM can use a One-vs-Rest strategy, which splits a multi-class classification into one binary classification problem per class. Or SVM can use a One-vs-One strategy to split a multi-class classification into one binary classification problem per each pair of classes.
 
+As a linear classifier, the goal of SVM is to find a line that separates the data into clusters. There are different ways to draw a boundary line between the data clusters. SVM attempts to maximize the distance between the clusters and it does so by separating the data points with the largest possible margins. A hyperplane is the line exactly between two margins (equidistant from both margins). So SVM's goal is to find the hyperplane with the largest possible (equidistant) margins. Support vectors are defined as the data points closest to the hyperplane.
 
 
 <img width="523" alt="SVM" src="https://user-images.githubusercontent.com/88804543/157564307-94aa6087-53e0-4979-9ff5-07cc13ff7f2a.png">
