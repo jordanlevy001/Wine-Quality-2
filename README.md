@@ -38,9 +38,28 @@ Columns/Features:
 
 ## Exploratory Data Analysis, Processing, Visualization
 
-Examining the trends when grouped by quality score:
+##### The output variable: quality
 
-<img width="1092" alt="Group by QScore" src="https://user-images.githubusercontent.com/88804543/154178843-34e1d2f3-8491-411a-99d1-e3ea16b052e1.png">
+<img width="461" alt="Quality Score Histogram" src="https://user-images.githubusercontent.com/88804543/157565380-21191539-88eb-407f-9ffa-7ce646676d85.png">
+
+<img width="460" alt="Quality Score Counts" src="https://user-images.githubusercontent.com/88804543/157565434-5519127e-a3eb-4ed0-bc2e-e84240d07edd.png">
+
+##### Boxplot
+
+Boxplots were made of each feature plotted against the output. Boxplots are a good way to visualize the spread of the data and outliers.
+
+<img width="709" alt="Boxplot1" src="https://user-images.githubusercontent.com/88804543/157565670-40adbf45-22ee-401b-86b3-66bd183ffbc9.png">
+
+<img width="457" alt="Boxplot2" src="https://user-images.githubusercontent.com/88804543/157565671-a29f9197-2331-4271-8533-fd98f15b3422.png">
+
+<img width="487" alt="Boxplot3" src="https://user-images.githubusercontent.com/88804543/157565672-ffc260a2-7638-4c98-9db4-0c26fe609b15.png">
+
+
+##### Examining the trends when grouped by QUALITY SCORE:
+
+<img width="1056" alt="Stats" src="https://user-images.githubusercontent.com/88804543/157565804-134a2c90-117b-4a9c-b11b-3ccd75d198c2.png">
+
+<img width="1037" alt="Grouped by Quality Score" src="https://user-images.githubusercontent.com/88804543/157565812-64ce4729-556e-4648-8ded-d7208a43a4c5.png">
 
 The trends observed from this table:
 - Volatile Acidity decreases with increasing quality score 
