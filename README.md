@@ -38,15 +38,6 @@ Columns/Features:
 
 ## Exploratory Data Analysis, Processing, Visualization
 
-Looking at the quality score counts:
-
-<img width="434" alt="Quality Score Counts" src="https://user-images.githubusercontent.com/88804543/154179935-911cc753-3884-4529-9c64-03723b0a8262.png">
-
-- Only (6/1143) 0.5% of wines had a quality score of 3
-- Only (16/1143) ~1% of wines had a quality score of 8
-- Only (33/1143) ~3% of wines had a quality score of 4
-
-
 Examining the trends when grouped by quality score:
 
 <img width="1092" alt="Group by QScore" src="https://user-images.githubusercontent.com/88804543/154178843-34e1d2f3-8491-411a-99d1-e3ea16b052e1.png">
@@ -82,7 +73,12 @@ Here are the features sorted in order of greatest importance/weight:
 ## Analysis: Logistic Regression, Support-Vector Machines (SVM), Random Forest Classifier
 
 ### Logistic Regression
-Supervised learning can be divided into regression and classification. Regression is used to predict continuous variables. Whereas classification is used to predict discrete outcomes. For this wine analysis, the target variable (what we're trying to predict), is a quality score -- which is a continuous variable. The wine quality score is a numerical value within a given range, making it a continuous variable. In both classification and regression issues, the data is divided into features and targets. Features are the variable used to inform the prediction. The target/output is the predicted outcome.
+Supervised learning can be divided into regression and classification. Regression is used to predict continuous variables. Whereas classification is used to predict discrete outcomes. For this red wine analysis, the target variable (what we're trying to predict), is a quality score -- which is a multivariate classification, in other words it is discrete outcome with more than 2 classes. The quality score is a numerical value within a given range, making it a discrete variable. In this analysis, the original output variable was binned into 3 categories (represented in the "Reviews" column):
+1. Bad (Quality Score: 1-3)
+2. Average (Quality Score: 4-7)
+3. Excellent (Quality Score: 8-10)
+
+In both classification and regression issues, the data is divided into features and targets. Features are the variable used to inform the prediction. The target/output is the predicted outcome.
 
 <img width="507" alt="Logistic Regression" src="https://user-images.githubusercontent.com/88804543/157564291-6d43ec03-d717-49a4-a8bb-8bc3f0959c51.png">
 
@@ -113,19 +109,6 @@ As a result, the deep learning model might be able to identify variability in a 
 
 
 ## Results
-
-The principal component analysis (PCA) confirmed the eight most important metrics for wine likeability in order of importance are: 
-1. Volatile acidity
-2. Density
-3. Alcohol
-4. pH
-5. Chlorides
-6. Residual Sugar
-7. Citric acid
-8. Total Sulfure Dioxide
-9. Fixed Acidity
-10. Sulphates
-11.  sulphates, alcohol quantities. The most important of those eight is volatile acidity.
 
 The Logistic Regression Accuracy Score was 98.3%
 
