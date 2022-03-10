@@ -33,10 +33,9 @@ Columns/Features:
 12. **Quality** -- ORIGINAL OUTPUT -- this is the quality score
 13. **Reviews** -- NEW OUTPUT -- this column was added to bin the quality score into 1 of 3 categories: 1. Bad (Quality Score: 1-3) 2. Average (Quality Score: 4-7) 3. Excellent (Quality Score: 8-10)
 
-<img width="1117" alt="Wine Stats" src="https://user-images.githubusercontent.com/88804543/154178721-63f21163-eb1d-46bb-aaa1-35f497011f22.png">
+<img width="1056" alt="Stats" src="https://user-images.githubusercontent.com/88804543/157565804-134a2c90-117b-4a9c-b11b-3ccd75d198c2.png">
 
-
-## Exploratory Data Analysis, Processing, Visualization
+## Exploratory Data Analysis (EDA), Processing, Visualization
 
 ##### The output variable: quality
 
@@ -56,8 +55,6 @@ Boxplots were made of each feature plotted against the output. Boxplots are a go
 
 
 ##### Examining the trends when grouped by QUALITY SCORE:
-
-<img width="1056" alt="Stats" src="https://user-images.githubusercontent.com/88804543/157565804-134a2c90-117b-4a9c-b11b-3ccd75d198c2.png">
 
 <img width="1037" alt="Grouped by Quality Score" src="https://user-images.githubusercontent.com/88804543/157565812-64ce4729-556e-4648-8ded-d7208a43a4c5.png">
 
