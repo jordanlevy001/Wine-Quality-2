@@ -43,7 +43,7 @@ Columns/Features:
 
 <img width="460" alt="Quality Score Counts" src="https://user-images.githubusercontent.com/88804543/157565434-5519127e-a3eb-4ed0-bc2e-e84240d07edd.png">
 
-##### Boxplot
+##### Boxplots
 
 Boxplots were made of each feature plotted against the output. Boxplots are a good way to visualize the spread of the data and outliers.
 
