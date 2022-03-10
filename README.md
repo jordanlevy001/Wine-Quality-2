@@ -114,9 +114,20 @@ As a result, the deep learning model might be able to identify variability in a 
 
 ## Results
 
-The principal component analysis (PCA) confirmed the eight most important metrics for wine likeability are: volatile acidity, citric acid, sulphates, alcohol quantities. The most important of those eight is alcohol quantity.
+The principal component analysis (PCA) confirmed the eight most important metrics for wine likeability in order of importance are: 
+1. Volatile acidity
+2. Density
+3. Alcohol
+4. pH
+5. Chlorides
+6. Residual Sugar
+7. Citric acid
+8. Total Sulfure Dioxide
+9. Fixed Acidity
+10. Sulphates
+11.  sulphates, alcohol quantities. The most important of those eight is volatile acidity.
 
-The Logistic Regression Accuracy Score was 98.54%
+The Logistic Regression Accuracy Score was 98.3%
 
 The SVM Accuracy Score was 98.54%
 
