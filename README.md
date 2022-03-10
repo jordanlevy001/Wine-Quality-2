@@ -2,7 +2,7 @@
 A second machine learning wine quality analysis performed as a follow up to the ML-Wine-Quality repository. This is a fresh attempt to improve optimization of the machine learning techniques. A dataset with identical features but slightly different values was used. 
 
 ## Project Overview
-The goal of this project was to use machine learning techniques: logistic regression, SVM, Random Forest Classifier to predict the quality score (likeability) of various wines. Binning was used to decrease the number of classes of the output variable. A column was added to bin the quality scores into 1 of 3 bins: 1. Bad (Quality Score: 1-3), 2. Average (Quality Score: 4-7), 3. Excellent (Quality Score: 8-10). The data for this project was obtained with free use from [Kaggle](https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009) through UCI Machine Learning.
+The goal of this project was to use machine learning techniques: logistic regression, SVM, Random Forest Classifier to predict the quality score (likeability) of various wines. Binning was used to decrease the number of classes of the output variable. A column was added to bin the quality scores into 3 bins: 1. Bad (Quality Score: 1-3), 2. Average (Quality Score: 4-7), 3. Excellent (Quality Score: 8-10). The data for this project was obtained with free use from [Kaggle](https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009) through UCI Machine Learning.
 
 ## Technology/Software Utilized
 - Google Colab
@@ -30,8 +30,8 @@ Columns/Features:
 9. pH
 10. Sulphates
 11. Alcohol
-12. **Quality --> OUTPUT: this is the overall quality score**
-13. Reviews -- this column was added to bin the quality score into 1 of 3 categories: 1. Bad (Quality Score: 1-3) 2. Average (Quality Score: 4-7) 3. Excellent (Quality Score: 8-10)
+12. **Quality** -- ORIGINAL OUTPUT -- this is the quality score
+13. **Reviews** -- NEW OUTPUT -- this column was added to bin the quality score into 1 of 3 categories: 1. Bad (Quality Score: 1-3) 2. Average (Quality Score: 4-7) 3. Excellent (Quality Score: 8-10)
 
 <img width="1117" alt="Wine Stats" src="https://user-images.githubusercontent.com/88804543/154178721-63f21163-eb1d-46bb-aaa1-35f497011f22.png">
 
